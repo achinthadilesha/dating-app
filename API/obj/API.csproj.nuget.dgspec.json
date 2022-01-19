@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\net-core\\dating-app\\API\\API.csproj": {}
+    "d:\\net-core\\dating-app\\API\\API.csproj": {}
   },
   "projects": {
-    "D:\\net-core\\dating-app\\API\\API.csproj": {
+    "d:\\net-core\\dating-app\\API\\API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\net-core\\dating-app\\API\\API.csproj",
+        "projectUniqueName": "d:\\net-core\\dating-app\\API\\API.csproj",
         "projectName": "API",
-        "projectPath": "D:\\net-core\\dating-app\\API\\API.csproj",
+        "projectPath": "d:\\net-core\\dating-app\\API\\API.csproj",
         "packagesPath": "C:\\Users\\General\\.nuget\\packages\\",
-        "outputPath": "D:\\net-core\\dating-app\\API\\obj\\",
+        "outputPath": "d:\\net-core\\dating-app\\API\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\General\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -38,6 +38,10 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "Microsoft.EntityFrameworkCore.Sqlite": {
+              "target": "Package",
+              "version": "[6.0.1, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.2.3, )"

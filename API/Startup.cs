@@ -57,7 +57,7 @@ namespace API
             app.UseHttpsRedirection();
 
             //! cors (orer matters inside congiure method)
-            app.UseCors(policy => policy.AllowAnyHeader().AllowAnyMethod().WithOrigins("http://localhost:4200"));
+            app.UseCors(policy => policy.AllowAnyHeader().AllowAnyMethod().WithOrigins("https://localhost:4200"));
 
             app.UseRouting();
 

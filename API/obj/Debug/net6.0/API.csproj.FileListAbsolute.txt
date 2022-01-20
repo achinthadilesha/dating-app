@@ -51,3 +51,10 @@ D:\net-core\dating-app\API\bin\Debug\net6.0\runtimes\win-x64\native\e_sqlite3.dl
 D:\net-core\dating-app\API\bin\Debug\net6.0\runtimes\win-x86\native\e_sqlite3.dll
 D:\net-core\dating-app\API\bin\Debug\net6.0\Humanizer.dll
 D:\net-core\dating-app\API\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
+D:\net-core\dating-app\API\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\net-core\dating-app\API\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+D:\net-core\dating-app\API\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
+D:\net-core\dating-app\API\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
+D:\net-core\dating-app\API\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+D:\net-core\dating-app\API\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
+D:\net-core\dating-app\API\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll

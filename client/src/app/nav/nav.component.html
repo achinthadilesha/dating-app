@@ -8,7 +8,8 @@
             </button>
 
             <!-- nab bar items -->
-            <ul class="navbar-nav me-auto mb-2 mb-md-0">
+            <ul class="navbar-nav me-auto mb-2 mb-md-0" *ngIf="accountService
+            .currentUser$ | async">
                 <li class="nav-item">
                     <a class="nav-link" aria-current="page" href="#">Home</a>
                 </li>
@@ -16,11 +17,23 @@
                     <a class="nav-link" href="#">Link</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link">Disabled</a>
+                    <a class="nav-link" (click)="logout()">Logout</a>
                 </li>
             </ul>
+
+
+            <!-- navbar-dropdown -->
+            <div class="dropdown" *ngIf="accountService.currentUser$ | async" dropdown>
+                <a class="dropdown-toggle text-light" dropdownToggle>Welcome user</a>
+                <div class="dropdown-menu mt-3" *dropdownMenu>
+                    <a class="dropdown-item">Edit Profile</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" (click)="logout()">Logout</a>
+                </div>
+            </div>
+
             <!-- form here -->
-            <form #loginForm="ngForm" class="form-inline mt-2 mt-md-0" (ngSubmit)="login()" autocomplete="off">
+            <form #loginForm="ngForm" class="form-inline mt-2 mt-md-0" (ngSubmit)="login()" autocomplete="off" *ngIf="(currentUser$ | async) === null">
                 <!-- username -->
                 <input name="username" [(ngModel)]="model.username" class="form-control mr-sm-2" type="text" placeholder="Username">
                 <!-- password -->
